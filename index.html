@@ -138,7 +138,7 @@
                                         <i class="anticon font-size-10 anticon-right"></i>
                                     </div>
                                 </a>
-                                <a href="javascript:void(0);" class="dropdown-item d-block p-h-15 p-v-10">
+                                <a href="javascript:void(0);" data-toggle="modal" data-target="#logout" class="dropdown-item d-block p-h-15 p-v-10">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div>
                                             <i class="anticon opacity-04 font-size-16 anticon-logout"></i>
@@ -191,7 +191,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="" href="javascript:void(0);">
+                            <a class="" href="javascript:void(0);"  data-toggle="modal" data-target="#logout">
                                 <span class="icon-holder">
                                     <i class="anticon anticon-logout"></i>
                                 </span>
@@ -596,6 +596,25 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-primary">Create Project</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal" id="logout" >
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Ready to Leave?</h5>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <i class="anticon anticon-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Select "Logout" below if you are ready to end your current session.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default m-r-10" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Logout</button>
                                 </div>
                             </div>
                         </div>
